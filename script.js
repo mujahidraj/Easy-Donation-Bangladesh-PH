@@ -18,3 +18,15 @@ document.getElementById("student-donate-button").addEventListener("click", funct
 
 })
 
+
+document.getElementById("history-button").addEventListener("click",function(){
+    document.getElementById("donation-div").classList.add("hidden");
+        document.getElementById("history-div").classList.remove("hidden");
+
+})
+
+document.getElementById("donation-button").addEventListener("click",function(){
+    document.getElementById("donation-div").classList.remove("hidden");
+        document.getElementById("history-div").classList.add("hidden");
+
+})
