@@ -21,6 +21,24 @@
     </style>
 </head>
 
+<!-- modals -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box flex flex-col items-center gap-4 justify-center">
+    <h3 class="text-3xl font-bold ">Congrats !</h3>
+    <img src="assets/coin.png" alt="">
+    <p class="py-4">You have donated for humankind.</p>
+    <h3 class="text-3xl font-bold ">Successfully</h3>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="text-lg btn">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
 <body class="lexend-font">
 
     <!-- nav bar -->
@@ -43,7 +61,7 @@
 
 
 
-    <main class="max-w-[1140px] mx-auto py-14">
+    <main class="max-w-[1140px] mx-auto py-14" id="main-part">
         <!-- button section -->
         <div class="text-center">
             <button class="py-4 px-8 bg-[#B4F461] text-xl font-semibold border-2 border-[#1111114D] rounded-lg">
@@ -72,7 +90,8 @@
                     supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 <input class="p-5 text-[#11111166] font-light rounded-lg border-none bg-slate-200" type="text" name=""
                     id="noakhali-donated-amount" placeholder="Write Donation Amount">
-                <button class="my-4 py-4 px-8 text-xl font-semibold bg-[#B4F461] rounded-lg" id="noakhali-donate-button">Donate Now</button>
+                <button class="my-4 py-4 px-8 text-xl font-semibold bg-[#B4F461] rounded-lg"
+                    id="noakhali-donate-button">Donate Now</button>
             </div>
         </div>
 
@@ -96,7 +115,8 @@
                     to assist those in urgent need.</p>
                 <input class="p-5 text-[#11111166] font-light rounded-lg border-none bg-slate-200" type="text" name=""
                     id="feni-donated-amount" placeholder="Write Donation Amount">
-                <button class="my-4 py-4 px-8 text-xl font-semibold bg-[#B4F461] rounded-lg" id="feni-donate-button">Donate Now</button>
+                <button class="my-4 py-4 px-8 text-xl font-semibold bg-[#B4F461] rounded-lg"
+                    id="feni-donate-button">Donate Now</button>
             </div>
         </div>
 
@@ -112,10 +132,16 @@
                     <h3 class="text-[#111111B2]"><span id="student-balance">00.00</span> BDT</h3>
                 </div>
                 <h3 class="text-xl font-bold py-4 ">Aid for Injured in the Quota Movement</h3>
-                <p class="font-light text-[#111111B2] pb-2"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                <p class="font-light text-[#111111B2] pb-2"> The recent Quota movement has resulted in numerous injuries
+                    and significant hardship for many individuals. Your support is crucial in providing medical
+                    assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help
+                    ensure that injured individuals receive the care and support they need during this challenging time.
+                    Every donation plays a vital role in alleviating their suffering and aiding in their recovery.
+                    Please consider making a donation to support these brave individuals in their time of need.</p>
                 <input class="p-5 text-[#11111166] font-light rounded-lg border-none bg-slate-200" type="text" name=""
                     id="student-donated-amount" placeholder="Write Donation Amount">
-                <button class="my-4 py-4 px-8 text-xl font-semibold bg-[#B4F461] rounded-lg" id="student-donate-button">Donate Now</button>
+                <button class="my-4 py-4 px-8 text-xl font-semibold bg-[#B4F461] rounded-lg"
+                    id="student-donate-button">Donate Now</button>
             </div>
         </div>
 
