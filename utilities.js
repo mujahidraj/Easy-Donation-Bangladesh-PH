@@ -6,10 +6,10 @@ function mainBalanceDeducted (id,areaId){
     
        const noakhaliBalance = document.getElementById(areaId);
        noakhaliBalance.innerText = parseFloat(noakhaliBalance.innerText) + parseFloat(donatedBalance);
+        const modalsPara = document.getElementById("inspiration").innerText = "You have donated " + donatedBalance + " BDT to the Humankind .Thank you !"
 
-
-      return profileBalance.innerText && noakhaliBalance.innerText;
-
+      return profileBalance.innerText && noakhaliBalance.innerText && modalsPara;
+        
 
 }
 
